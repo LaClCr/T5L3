@@ -30,6 +30,12 @@ while [ $pos -ge 0 ];do
 	pos=`expr $pos - 1` 
 done 
 
+if [ $result > 1999 ] 
+then 
+	echo "El número introducido es superior a 1999. No se realizará la conversión."
+	exit 0
+fi
+
 echo "El equivalente en decimal a $num es $result"
 }
 
